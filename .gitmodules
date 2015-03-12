@@ -4,3 +4,6 @@
 [submodule "cybox-jaxb/src/main/resources"]
 	path = cybox-jaxb/src/main/resources
 	url = https://github.com/CybOXProject/schemas.git
+[submodule "stix-jaxb/src/main/resources"]
+	path = stix-jaxb/src/main/resources
+	url = https://github.com/STIXProject/schemas.git

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<jxb:bindings version="2.1" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" jxb:extensionBindingPrefixes="xjc" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <jxb:bindings schemaLocation="../resources/stix_common.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="org.mitre.stix.common"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+</jxb:bindings>

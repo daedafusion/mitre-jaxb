@@ -26,6 +26,7 @@
     <modules>
         <module>cybox-jaxb</module>
         <module>maec-jaxb</module>
+        <module>stix-jaxb</module>
     </modules>
     <scm>
         <connection>scm:git:git@bitbucket.org:daedafusion/mitre-jaxb.git</connection>

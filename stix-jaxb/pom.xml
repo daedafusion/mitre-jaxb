@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>mitre-jaxb</artifactId>
+        <groupId>com.daedafusion.mitre</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>stix-jaxb</artifactId>
+    <version>1.1.1-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.daedafusion.mitre</groupId>
+            <artifactId>cybox-jaxb</artifactId>
+            <version>2.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.daedafusion.mitre</groupId>
+            <artifactId>maec-jaxb</artifactId>
+            <version>4.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.google.code.maven-replacer-plugin</groupId>
+                <artifactId>replacer</artifactId>
+                <version>1.5.3</version>
+                <executions>
+                    <execution>
+                        <id>change_catalog</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${project.basedir}/src/main/xjb/catalog.xml</file>
+                            <outputFile>${project.basedir}/target/catalog.xml</outputFile>
+                            <replacements>
+                                <replacement>
+                                    <token>ABS_PATH</token>
+                                    <value>${project.basedir}</value>
+                                </replacement>
+                            </replacements>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>change_episode</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${project.basedir}/target/classes/META-INF/sun-jaxb.episode</file>
+                            <replacements>
+                                <replacement>
+                                    <token>bindings scd="x-schema::tns"</token>
+                                    <value>bindings if-exists="true" scd="x-schema::tns"</value>
+                                </replacement>
+                            </replacements>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <version>0.12.3</version>
+                <executions>
+                    <execution>
+                        <id>generate</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <debug>true</debug>
+                    <episode>true</episode>
+                    <useDependenciesAsEpisodes>true</useDependenciesAsEpisodes>
+
+                    <schemaDirectory>src/main/resources</schemaDirectory>
+                    <schemaIncludes>
+                        <include>*.xsd</include>
+                    </schemaIncludes>
+
+                    <catalog>target/catalog.xml</catalog>
+                    <strict>false</strict>
+
+                    <bindingDirectory>src/main/xjb</bindingDirectory>
+
+                    <extension>true</extension>
+                    <args>
+                        <arg>-XtoString</arg>
+                        <arg>-Xequals</arg>
+                        <arg>-XhashCode</arg>
+                    </args>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.jvnet.jaxb2_commons</groupId>
+                            <artifactId>jaxb2-basics</artifactId>
+                            <version>0.6.5</version>
+                        </plugin>
+                    </plugins>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

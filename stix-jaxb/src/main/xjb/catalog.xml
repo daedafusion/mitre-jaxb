@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <rewriteSystem systemIdStartString="file:ABS_PATH/src/main/resources/cybox/" rewritePrefix="maven:com.daedafusion.mitre:cybox-jaxb:jar::!/"/>
+    <!--<system systemId="file:ABS_PATH/src/main/resources/cybox/cybox_common.xsd" uri="http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd"/>-->
+    <!--<system systemId="file:ABS_PATH/src/main/resources/cybox/cybox_core.xsd" uri="http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd"/>-->
+</catalog>
