@@ -1,0 +1,6 @@
+[submodule "maec-jaxb/src/main/resources"]
+	path = maec-jaxb/src/main/resources
+	url = https://github.com/MAECProject/schemas.git
+[submodule "cybox-jaxb/src/main/resources"]
+	path = cybox-jaxb/src/main/resources
+	url = https://github.com/CybOXProject/schemas.git
