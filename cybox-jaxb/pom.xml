@@ -21,6 +21,46 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>com.google.code.maven-replacer-plugin</groupId>
+                <artifactId>replacer</artifactId>
+                <version>1.5.3</version>
+                <executions>
+                    <execution>
+                        <id>change_catalog</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${project.basedir}/src/main/xjb/catalog.xml</file>
+                            <outputFile>${project.basedir}/target/catalog.xml</outputFile>
+                            <replacements>
+                                <replacement>
+                                    <token>ABS_PATH</token>
+                                    <value>${project.basedir}</value>
+                                </replacement>
+                            </replacements>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>change_episode</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${project.basedir}/target/classes/META-INF/sun-jaxb.episode</file>
+                            <replacements>
+                                <replacement>
+                                    <token>bindings scd="x-schema::tns"</token>
+                                    <value>bindings if-exists="true" scd="x-schema::tns"</value>
+                                </replacement>
+                            </replacements>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.jvnet.jaxb2.maven2</groupId>
                 <artifactId>maven-jaxb2-plugin</artifactId>
                 <version>0.12.3</version>
@@ -39,7 +79,11 @@
                     <schemaIncludes>
                         <include>*.xsd</include>
                         <include>objects/*.xsd</include>
+                        <include>extensions/location/*.xsd</include>
                     </schemaIncludes>
+
+                    <!--<catalog>target/catalog.xml</catalog>-->
+                    <!--<strict>false</strict>-->
 
                     <bindingDirectory>src/main/xjb</bindingDirectory>
 
@@ -56,28 +100,6 @@
                             <version>0.6.5</version>
                         </plugin>
                     </plugins>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.google.code.maven-replacer-plugin</groupId>
-                <artifactId>replacer</artifactId>
-                <version>1.5.3</version>
-                <executions>
-                    <execution>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>replace</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <file>${project.basedir}/target/classes/META-INF/sun-jaxb.episode</file>
-                    <replacements>
-                        <replacement>
-                            <token>bindings scd="x-schema::tns"</token>
-                            <value>bindings if-exists="true" scd="x-schema::tns"</value>
-                        </replacement>
-                    </replacements>
                 </configuration>
             </plugin>
         </plugins>

@@ -15,12 +15,17 @@
             <jxb:package name="org.mitre.cybox.vocabs"/>
         </jxb:schemaBindings>
     </jxb:bindings>
-<!--    <jxb:bindings schemaLocation="../resources/extensions/location/ciq_address_3.0.xsd">
+    <jxb:bindings schemaLocation="../resources/extensions/location/ciq_address_3.0.xsd">
     <jxb:schemaBindings>
     <jxb:package name="org.mitre.cybox.extension.ciq"/>
     </jxb:schemaBindings>
     </jxb:bindings>
-    <jxb:bindings schemaLocation="../resources/extensions/platform/cpe2.3.xsd">
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xlink-2003-12-31.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.w3.xlink"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+<!--    <jxb:bindings schemaLocation="../resources/extensions/platform/cpe2.3.xsd">
     <jxb:schemaBindings>
     <jxb:package name="org.mitre.cybox.extension.cpe"/>
     </jxb:schemaBindings>
@@ -49,18 +54,16 @@
     <jxb:schemaBindings>
     <jxb:package name="org.mitre.cybox.external.ciq.xal"/>
     </jxb:schemaBindings>
-    </jxb:bindings>
+    </jxb:bindings> -->
     <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xAL.xsd">
-    <jxb:schemaBindings>
-    <jxb:package name="org.mitre.cybox.external.ciq.xal"/>
-    </jxb:schemaBindings>
+        <jxb:schemaBindings>
+        <jxb:package name="org.mitre.cybox.external.ciq.xal"/>
+        </jxb:schemaBindings>
+        <jxb:bindings node="//xs:complexType[@name='AddressType']/xs:attribute[@name='Type']">
+            <jxb:property name="addressType"/>
+        </jxb:bindings>
     </jxb:bindings>
-    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xlink-2003-12-31.xsd">
-    <jxb:schemaBindings>
-    <jxb:package name="org.mitre.cybox.external.ciq"/>
-    </jxb:schemaBindings>
-    </jxb:bindings>
-    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xNAL-types.xsd">
+<!--    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xNAL-types.xsd">
     <jxb:schemaBindings>
     <jxb:package name="org.mitre.cybox.external.ciq.xnal.types"/>
     </jxb:schemaBindings>
