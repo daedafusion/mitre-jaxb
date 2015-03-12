@@ -1,0 +1,533 @@
+<?xml version="1.0"?>
+<jxb:bindings version="2.1" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" jxb:extensionBindingPrefixes="xjc" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <jxb:bindings schemaLocation="../resources/cybox_common.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="org.mitre.cybox.common"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/cybox_core.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="org.mitre.cybox.core"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/cybox_default_vocabularies.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="org.mitre.cybox.vocabs"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+<!--    <jxb:bindings schemaLocation="../resources/extensions/location/ciq_address_3.0.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.extension.ciq"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/platform/cpe2.3.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.extension.cpe"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/cpe_2.3/cpe-language_2.3.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.cpe.lang"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/cpe_2.3/cpe-naming_2.3.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.cpe.naming"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/cpe_2.3/xml.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.cpe"/>
+    </jxb:schemaBindings>
+    </jxb:bindings> -->
+<!--    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/CommonTypes.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.ciq.common"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xAL-types.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.ciq.xal"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xAL.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.ciq.xal"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xlink-2003-12-31.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.ciq"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xNAL-types.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.ciq.xnal.types"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xNAL.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.ciq.xnal"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xNL-types.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.ciq.xnl.types"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xNL.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.ciq.xnl"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xPIL-types.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.ciq.xpil.types"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xPIL.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.external.ciq.xpil"/>
+    </jxb:schemaBindings>
+    </jxb:bindings> -->
+    <jxb:bindings schemaLocation="../resources/objects/Account_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.account"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Address_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.address"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/API_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.api"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Archive_File_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.file"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/ARP_Cache_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.arp"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Artifact_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.artifact"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/AS_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.as"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Code_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.code"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Custom_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.custom"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Device_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.device"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Disk_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.disk"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Disk_Partition_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.disk"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/DNS_Cache_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.dns"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/DNS_Query_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.dns"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/DNS_Record_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.dns"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Domain_Name_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.domain"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Email_Message_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.email"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/File_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.file"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/GUI_Dialogbox_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.gui"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/GUI_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.gui"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/GUI_Window_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.gui"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Hostname_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.hostname"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/HTTP_Session_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.http"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Image_File_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.image"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Library_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.lib"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Link_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.link"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Linux_Package_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.linux"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Memory_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.mem"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Mutex_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.mutex"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Network_Connection_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.network"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Network_Flow_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.network"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Network_Packet_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.network"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Network_Route_Entry_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.network"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Network_Route_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.network"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Network_Socket_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.network"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Network_Subnet_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.network"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/PDF_File_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.pdf"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Pipe_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.pipe"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Port_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.port"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Process_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.process"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Product_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.product"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Semaphore_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.semaphore"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/SMS_Message_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.sms"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Socket_Address_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.socket"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/System_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.system"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Unix_File_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.unix"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Unix_Network_Route_Entry_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.unix"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Unix_Pipe_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.unix"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Unix_Process_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.unix"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Unix_User_Account_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.unix"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Unix_Volume_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.unix"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/URI_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.uri"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/URL_History_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.url"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/User_Account_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.user"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/User_Session_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.user"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Volume_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.volume"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Whois_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.whois"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Computer_Account_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Critical_Section_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Driver_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Event_Log_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Event_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Executable_File_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_File_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Filemapping_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Handle_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Hook_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Kernel_Hook_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Kernel_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Mailslot_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Memory_Page_Region_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Mutex_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Network_Route_Entry_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Network_Share_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Pipe_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Prefetch_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Process_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Registry_Key_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Semaphore_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Service_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_System_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_System_Restore_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Task_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Thread_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_User_Account_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Volume_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/Win_Waitable_Timer_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.win"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/objects/X509_Certificate_Object.xsd">
+    <jxb:schemaBindings>
+    <jxb:package name="org.mitre.cybox.objects.x509"/>
+    </jxb:schemaBindings>
+    </jxb:bindings>
+</jxb:bindings>

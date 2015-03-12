@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <!--<system systemId="http://www.w3.org/2001/xml.xsd" uri="xml.xsd"/>-->
+    <!--<system systemId="http://grouper.ieee.org/groups/malware/malwg/Schema1.2/metadataSharing.xsd" uri="../external/metadataSharing.xsd"/>-->
+    <system systemId="http://maec.mitre.org/language/version4.1/maec_default_vocabularies.xsd" uri="maec_default_vocabularies.xsd"/>
+    <system systemId="http://maec.mitre.org/language/version4.1/maec_package_schema.xsd" uri="maec_package_schema.xsd"/>
+    <system systemId="http://maec.mitre.org/language/version4.1/maec_bundle_schema.xsd" uri="maec_bundle_schema.xsd"/>
+</catalog>

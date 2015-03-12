@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<jxb:bindings version="2.1" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" jxb:extensionBindingPrefixes="xjc" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <jxb:bindings schemaLocation="../resources/maec_container_schema.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="org.mitre.maec.container"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="http://maec.mitre.org/language/version4.1/maec_bundle_schema.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="org.mitre.maec.bundle"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="http://maec.mitre.org/language/version4.1/maec_default_vocabularies.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="org.mitre.maec.vocabs"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="http://maec.mitre.org/language/version4.1/maec_package_schema.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="org.mitre.maec.pkg"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="http://grouper.ieee.org/groups/malware/malwg/Schema1.2/metadataSharing.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="org.ieee.grouper"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+</jxb:bindings>
