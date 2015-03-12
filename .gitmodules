@@ -1,3 +1,0 @@
-[submodule "cybox-jaxb/src/main/xsd"]
-	path = cybox-jaxb/src/main/xsd
-	url = https://github.com/CybOXProject/schemas.git
