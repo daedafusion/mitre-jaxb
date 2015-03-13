@@ -66,6 +66,11 @@
                 <jxb:package name="org.mitre.stix.extension.attackpattern"/>
             </jxb:schemaBindings>
         </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/capec_2.7/ap_schema_v2.7.xsd">
+                    <jxb:schemaBindings>
+                        <jxb:package name="org.mitre.stix.external.capec"/>
+                    </jxb:schemaBindings>
+                </jxb:bindings>
     <jxb:bindings schemaLocation="../resources/extensions/identity/ciq_3.0_identity.xsd">
             <jxb:schemaBindings>
                 <jxb:package name="org.mitre.stix.extension.identity"/>
@@ -73,7 +78,7 @@
         </jxb:bindings>
     <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xNL.xsd">
             <jxb:schemaBindings>
-                <jxb:package name="org.mitre.stix.external.ciq"/>
+                <jxb:package name="org.mitre.stix.external.ciq.xnl"/>
             </jxb:schemaBindings>
             <jxb:bindings node="//xs:complexType[@name='OrganisationNameType']/xs:attribute[@name='Type']">
                   <jxb:property name="nameTypeList"/>
@@ -82,6 +87,11 @@
                   <jxb:property name="nameTypeList"/>
                 </jxb:bindings>
         </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xPIL.xsd">
+                <jxb:schemaBindings>
+                    <jxb:package name="org.mitre.stix.external.ciq.xpil"/>
+                </jxb:schemaBindings>
+            </jxb:bindings>
     <jxb:bindings schemaLocation="../resources/extensions/malware/maec_4.1_malware.xsd">
                 <jxb:schemaBindings>
                     <jxb:package name="org.mitre.stix.extension.malware"/>
@@ -117,9 +127,39 @@
                             <jxb:package name="org.mitre.stix.extension.test.ioc"/>
                         </jxb:schemaBindings>
                     </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/open_ioc_2010/ioc.xsd">
+                            <jxb:schemaBindings>
+                                <jxb:package name="org.mitre.stix.external.ioc"/>
+                            </jxb:schemaBindings>
+                        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/open_ioc_2010/ioc-TR.xsd">
+                                <jxb:schemaBindings>
+                                    <jxb:package name="org.mitre.stix.external.ioc.tr"/>
+                                </jxb:schemaBindings>
+                            </jxb:bindings>
     <jxb:bindings schemaLocation="../resources/extensions/test_mechanism/oval_5.10_test_mechanism.xsd">
                         <jxb:schemaBindings>
                             <jxb:package name="org.mitre.stix.extension.test.oval"/>
+                        </jxb:schemaBindings>
+                    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oval_5.10/oval-common-schema.xsd">
+                    <jxb:schemaBindings>
+                        <jxb:package name="org.mitre.stix.external.oval.common"/>
+                    </jxb:schemaBindings>
+                </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oval_5.10/oval-definitions-schema.xsd">
+                        <jxb:schemaBindings>
+                            <jxb:package name="org.mitre.stix.external.oval.def"/>
+                        </jxb:schemaBindings>
+                    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oval_5.10/oval-variables-schema.xsd">
+                        <jxb:schemaBindings>
+                            <jxb:package name="org.mitre.stix.external.oval.variables"/>
+                        </jxb:schemaBindings>
+                    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oval_5.10/xmldsig-core-schema.xsd">
+                        <jxb:schemaBindings>
+                            <jxb:package name="org.mitre.stix.external.oval.dsig"/>
                         </jxb:schemaBindings>
                     </jxb:bindings>
     <jxb:bindings schemaLocation="../resources/extensions/test_mechanism/snort_test_mechanism.xsd">
@@ -137,4 +177,39 @@
                         <jxb:package name="org.mitre.stix.extension.vulnerability"/>
                     </jxb:schemaBindings>
                 </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/cvrf_1.1/scap-core_0.9.xsd">
+                        <jxb:schemaBindings>
+                            <jxb:package name="org.mitre.stix.external.scap"/>
+                        </jxb:schemaBindings>
+                    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/cvrf_1.1/cvss-v2_0.9.xsd">
+                            <jxb:schemaBindings>
+                                <jxb:package name="org.mitre.stix.external.cvss"/>
+                            </jxb:schemaBindings>
+                        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/cvrf_1.1/cvrf.xsd">
+                                <jxb:schemaBindings>
+                                    <jxb:package name="org.mitre.stix.external.cvrf"/>
+                                </jxb:schemaBindings>
+                            </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/cvrf_1.1/dc.xsd">
+                                    <jxb:schemaBindings>
+                                        <jxb:package name="org.mitre.stix.external.dc"/>
+                                    </jxb:schemaBindings>
+                                </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/cvrf_1.1/common.xsd">
+                                        <jxb:schemaBindings>
+                                            <jxb:package name="org.mitre.stix.external.cvrf.common"/>
+                                        </jxb:schemaBindings>
+                                    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/cvrf_1.1/prod.xsd">
+                                        <jxb:schemaBindings>
+                                            <jxb:package name="org.mitre.stix.external.cvrf.prod"/>
+                                        </jxb:schemaBindings>
+                                    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/cvrf_1.1/vuln.xsd">
+                                        <jxb:schemaBindings>
+                                            <jxb:package name="org.mitre.stix.external.vuln"/>
+                                        </jxb:schemaBindings>
+                                    </jxb:bindings>
 </jxb:bindings>
