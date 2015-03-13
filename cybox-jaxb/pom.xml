@@ -80,6 +80,7 @@
                         <include>*.xsd</include>
                         <include>objects/*.xsd</include>
                         <include>extensions/location/*.xsd</include>
+                        <include>extensions/platform/cpe2.3.xsd</include>
                     </schemaIncludes>
 
                     <!--<catalog>target/catalog.xml</catalog>-->
