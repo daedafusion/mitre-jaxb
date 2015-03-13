@@ -52,8 +52,10 @@
                             <file>${project.basedir}/target/classes/META-INF/sun-jaxb.episode</file>
                             <replacements>
                                 <replacement>
-                                    <token>bindings scd="x-schema::tns"</token>
-                                    <value>bindings if-exists="true" scd="x-schema::tns"</value>
+                                    <!--<token>bindings scd="x-schema::tns"</token>-->
+                                    <token>bindings scd=</token>
+                                    <!--<value>bindings if-exists="true" scd="x-schema::tns"</value>-->
+                                    <value>bindings if-exists="true" scd=</value>
                                 </replacement>
                             </replacements>
                         </configuration>

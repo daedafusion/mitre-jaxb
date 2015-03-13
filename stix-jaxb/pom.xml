@@ -58,8 +58,10 @@
                             <file>${project.basedir}/target/classes/META-INF/sun-jaxb.episode</file>
                             <replacements>
                                 <replacement>
-                                    <token>bindings scd="x-schema::tns"</token>
-                                    <value>bindings if-exists="true" scd="x-schema::tns"</value>
+                                    <!--<token>bindings scd="x-schema::tns"</token>-->
+                                    <token>bindings scd=</token>
+                                    <!--<value>bindings if-exists="true" scd="x-schema::tns"</value>-->
+                                    <value>bindings if-exists="true" scd=</value>
                                 </replacement>
                             </replacements>
                         </configuration>
@@ -86,6 +88,14 @@
                     <schemaDirectory>src/main/resources</schemaDirectory>
                     <schemaIncludes>
                         <include>*.xsd</include>
+                        <include>extensions/address/*.xsd</include>
+                        <include>extensions/attack_pattern/*.xsd</include>
+                        <include>extensions/identity/*.xsd</include>
+                        <include>extensions/malware/*.xsd</include>
+                        <include>extensions/marking/*.xsd</include>
+                        <include>extensions/structured_coa/*.xsd</include>
+                        <include>extensions/test_mechanism/*.xsd</include>
+                        <include>extensions/vulnerability/*.xsd</include>
                     </schemaIncludes>
 
                     <catalog>target/catalog.xml</catalog>

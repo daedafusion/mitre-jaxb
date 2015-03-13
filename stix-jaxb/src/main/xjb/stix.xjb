@@ -5,4 +5,136 @@
             <jxb:package name="org.mitre.stix.common"/>
         </jxb:schemaBindings>
     </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/campaign.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.campaign"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/course_of_action.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.coa"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/data_marking.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.datamarking"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/exploit_target.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.exploittarget"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/incident.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.incident"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/indicator.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.indicator"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/stix_core.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.core"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/stix_default_vocabularies.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.vocab"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/threat_actor.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.threatactor"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/ttp.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.ttp"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+
+    <jxb:bindings schemaLocation="../resources/extensions/address/ciq_3.0_address.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.extension.address"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/attack_pattern/capec_2.7_attack_pattern.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.extension.attackpattern"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/identity/ciq_3.0_identity.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.extension.identity"/>
+            </jxb:schemaBindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/external/oasis_ciq_3.0/xNL.xsd">
+            <jxb:schemaBindings>
+                <jxb:package name="org.mitre.stix.external.ciq"/>
+            </jxb:schemaBindings>
+            <jxb:bindings node="//xs:complexType[@name='OrganisationNameType']/xs:attribute[@name='Type']">
+                  <jxb:property name="nameTypeList"/>
+                </jxb:bindings>
+            <jxb:bindings node="//xs:complexType[@name='PersonNameType']/xs:attribute[@name='Type']">
+                  <jxb:property name="nameTypeList"/>
+                </jxb:bindings>
+        </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/malware/maec_4.1_malware.xsd">
+                <jxb:schemaBindings>
+                    <jxb:package name="org.mitre.stix.extension.malware"/>
+                </jxb:schemaBindings>
+            </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/marking/simple_marking.xsd">
+                <jxb:schemaBindings>
+                    <jxb:package name="org.mitre.stix.extension.marking.simple"/>
+                </jxb:schemaBindings>
+            </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/marking/terms_of_use_marking.xsd">
+                    <jxb:schemaBindings>
+                        <jxb:package name="org.mitre.stix.extension.marking.terms"/>
+                    </jxb:schemaBindings>
+                </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/marking/tlp_marking.xsd">
+                    <jxb:schemaBindings>
+                        <jxb:package name="org.mitre.stix.extension.marking.tlp"/>
+                    </jxb:schemaBindings>
+                </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/structured_coa/generic_structured_coa.xsd">
+                    <jxb:schemaBindings>
+                        <jxb:package name="org.mitre.stix.extension.coa"/>
+                    </jxb:schemaBindings>
+                </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/test_mechanism/generic_test_mechanism.xsd">
+                    <jxb:schemaBindings>
+                        <jxb:package name="org.mitre.stix.extension.test.generic"/>
+                    </jxb:schemaBindings>
+                </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/test_mechanism/open_ioc_2010_test_mechanism.xsd">
+                        <jxb:schemaBindings>
+                            <jxb:package name="org.mitre.stix.extension.test.ioc"/>
+                        </jxb:schemaBindings>
+                    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/test_mechanism/oval_5.10_test_mechanism.xsd">
+                        <jxb:schemaBindings>
+                            <jxb:package name="org.mitre.stix.extension.test.oval"/>
+                        </jxb:schemaBindings>
+                    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/test_mechanism/snort_test_mechanism.xsd">
+                        <jxb:schemaBindings>
+                            <jxb:package name="org.mitre.stix.extension.test.snort"/>
+                        </jxb:schemaBindings>
+                    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/test_mechanism/yara_test_mechanism.xsd">
+                        <jxb:schemaBindings>
+                            <jxb:package name="org.mitre.stix.extension.test.yara"/>
+                        </jxb:schemaBindings>
+                    </jxb:bindings>
+    <jxb:bindings schemaLocation="../resources/extensions/vulnerability/cvrf_1.1_vulnerability.xsd">
+                    <jxb:schemaBindings>
+                        <jxb:package name="org.mitre.stix.extension.vulnerability"/>
+                    </jxb:schemaBindings>
+                </jxb:bindings>
 </jxb:bindings>
