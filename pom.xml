@@ -28,14 +28,36 @@
         <module>maec-jaxb</module>
         <module>stix-jaxb</module>
     </modules>
+
     <scm>
         <connection>scm:git:git@bitbucket.org:daedafusion/mitre-jaxb.git</connection>
         <developerConnection>scm:git:git@bitbucket.org:daedafusion/mitre-jaxb.git</developerConnection>
         <url>https://bitbucket.org/daedafusion/mitre-jaxb</url>
     </scm>
 
+    <properties>
+        <cybox.version>2.1-SNAPSHOT</cybox.version>
+        <maec.version>4.1-SNAPSHOT</maec.version>
+        <stix.version>1.1.1-SNAPSHOT</stix.version>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.daedafusion.mitre</groupId>
+                <artifactId>cybox-jaxb</artifactId>
+                <version>${cybox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.daedafusion.mitre</groupId>
+                <artifactId>maec-jaxb</artifactId>
+                <version>${maec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.daedafusion.mitre</groupId>
+                <artifactId>stix-jaxb</artifactId>
+                <version>${stix.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.jvnet.jaxb2_commons</groupId>
                 <artifactId>jaxb2-basics</artifactId>
