@@ -5,11 +5,11 @@
     <parent>
         <artifactId>mitre-jaxb</artifactId>
         <groupId>com.daedafusion.mitre</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
 
     <artifactId>maec-jaxb</artifactId>
-    <version>${maec.version}</version>
+    <version>4.1</version>
 
     <dependencies>
         <dependency>
