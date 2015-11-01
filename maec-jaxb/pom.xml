@@ -5,7 +5,7 @@
     <parent>
         <artifactId>mitre-jaxb</artifactId>
         <groupId>com.daedafusion.mitre</groupId>
-        <version>1.1</version>
+        <version>1.2-SNAPSHOT</version>
     </parent>
 
     <artifactId>maec-jaxb</artifactId>
