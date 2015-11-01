@@ -2,7 +2,11 @@
 
 # mitre-jaxb
 
-JAXB Libraries for stix, maec & cybox.
+JAXB Libraries for stix, maec & cybox. The following versions of the schemas are used:
+
+    cybox v2.1
+    maec  v4.1
+    stix  v1.1.1
 
 ## Maven
 
