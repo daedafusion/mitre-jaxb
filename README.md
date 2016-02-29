@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/daedafusion/mitre-jaxb.svg?branch=master)](https://travis-ci.org/daedafusion/mitre-jaxb)
 
+[![Coverage Status](https://coveralls.io/repos/github/daedafusion/mitre-jaxb/badge.svg?branch=master)](https://coveralls.io/github/daedafusion/mitre-jaxb?branch=master)
+
 # mitre-jaxb
 
 JAXB Libraries for stix, maec & cybox. The following versions of the schemas are used:
